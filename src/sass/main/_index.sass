@@ -106,15 +106,23 @@
     padding: var.rem(30)
     background: #f5f8fa
     color: #657786
-    display: flex
-    justify-content: space-between
-    align-items: stretch
+    @media screen and ( min-width: var.$mobile )
+        display: flex
+        justify-content: space-between
+        align-items: stretch
     &__item
         flex: 1 1 33.33%
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: center
+        border-bottom: 1px solid #657786
+        padding: 2rem 0 1rem 0
+        &:nth-child(3)
+            border-bottom: none
+        @media screen and ( min-width: var.$mobile )
+            border-bottom: none
+            padding: 0
         p
             text-align: center
 .icon
