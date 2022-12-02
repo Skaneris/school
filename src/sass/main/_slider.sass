@@ -1,0 +1,48 @@
+.slider
+    padding: 4rem 3rem 0 3rem
+    position: relative
+    &__wrapper
+        width: 100%
+        max-width: 880px
+        margin: 0 auto
+        position: relative
+        .slide
+            position: absolute
+    .prev, .next
+        width: 1.25rem
+        height: 1.25rem
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        display: flex
+        cursor: pointer
+        &::before
+            content: ''
+            display: block
+            width: 10px
+            height: 10px
+            border-top: 2px solid #000000
+            margin: auto
+    .prev
+        left: 16px
+        &::before
+            border-left: 2px solid #000000
+            transform: rotate(-45deg)
+    .next
+        right: 16px
+        &::before
+            border-right: 2px solid #000000
+            transform: rotate(45deg)
+    .nav
+        list-style: none
+        display: flex
+        justify-content: center
+        gap: 0.5rem
+        li
+            width: 6px
+            height: 6px
+            border-radius: 50%
+            background: #CCC
+            cursor: pointer
+            &.active
+                background: #3D3D30

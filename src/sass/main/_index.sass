@@ -1,0 +1,130 @@
+@use 'banner'
+@use 'slider'
+@use 'fullbanner'
+@use 'cards'
+@use '../var'
+.box
+    margin: 0 0 4rem 0
+    padding: 3rem 0
+    background: #f5f8fa
+    @media screen and ( min-width: 700px )
+        display: flex
+        justify-content: space-around
+    &__item
+        display: flex
+        flex-direction: column
+        text-align: center
+        width: auto
+        @media screen and ( min-width: 700px )
+            width: 33%
+        &:nth-child(2)
+            margin: 3rem 0
+            @media screen and ( min-width: 700px )
+                margin: 0
+    h2, h5, p
+        margin: 0
+        color: #657786
+    h5
+        font-weight: 400
+    &__top
+        flex: 1 0 auto
+        p
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 1rem
+            font-weight: 900
+            span
+                display: inline-block
+                span
+                    display: block
+                    text-transform: uppercase
+            &.stars
+                span
+                    display: block
+                    width: 20px
+                    height: 20px
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' width='48' fill='gold'%3E%3Cpath d='m16.15 37.75 7.85-4.7 7.85 4.75-2.1-8.9 6.9-6-9.1-.8L24 13.7l-3.55 8.35-9.1.8 6.9 6ZM11.65 44l3.25-14.05L4 20.5l14.4-1.25L24 6l5.6 13.25L44 20.5l-10.9 9.45L36.35 44 24 36.55ZM24 26.25Z'/%3E%3C/svg%3E")
+                    background-size: contain
+.center-info
+    margin: 0 0 4rem 0
+    text-align: center
+    h5
+        font-weight: 400
+        max-width: 800px
+        margin: 1rem auto 1rem auto
+.block-wrapper
+    padding: 2rem 0 0 0
+.cards
+    padding: 3rem 0
+    @media screen and ( min-width: 700px )
+        display: flex
+        justify-content: space-between
+        gap: 1.25rem
+    &__item
+        margin: 0 0 1.75rem
+        padding: 2.3rem 1.25rem
+        box-shadow: 0 0 20px 0 rgb(0 0 0 / 15%)
+        @media screen and ( min-width: 700px )
+            margin: 0
+            width: 33%
+        p
+            text-transform: uppercase
+.box-grey
+    margin: 2rem 0 0 0
+    padding: var.rem(30)
+    background: #f5f8fa
+    color: #657786
+    text-align: left
+    @media screen and ( min-width: var.$mobile )
+        padding: var.rem(30) var.rem(30) var.rem(10) var.rem(30)
+        columns: 2
+        gap: 2rem
+        p
+            margin: 0 0 var.rem(20) 0
+.logos
+    padding: 2rem 0 4rem 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    gap: 1rem
+    &__item
+        height: 120px
+        flex: 0 0 30%
+        overflow: hidden
+        display: flex
+        @media screen and ( min-width: var.$mobile )
+            flex: 0 0 14%
+        img
+            width: 100%
+            object-fit: contain
+.base-img
+    margin: 0 0 4rem 0
+.contact
+    margin: 0 0 4rem 0
+    padding: var.rem(30)
+    background: #f5f8fa
+    color: #657786
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    &__item
+        flex: 1 1 33.33%
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        p
+            text-align: center
+.icon
+    margin: 0 0 0.6rem
+    width: 34px
+    height: 34px
+    background-size: 100%
+    &.adress
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' width='48' fill='%23657786'%3E%3Cpath d='M24 23.5q1.45 0 2.475-1.025Q27.5 21.45 27.5 20q0-1.45-1.025-2.475Q25.45 16.5 24 16.5q-1.45 0-2.475 1.025Q20.5 18.55 20.5 20q0 1.45 1.025 2.475Q22.55 23.5 24 23.5Zm0 16.55q6.65-6.05 9.825-10.975Q37 24.15 37 20.4q0-5.9-3.775-9.65T24 7q-5.45 0-9.225 3.75Q11 14.5 11 20.4q0 3.75 3.25 8.675Q17.5 34 24 40.05ZM24 44q-8.05-6.85-12.025-12.725Q8 25.4 8 20.4q0-7.5 4.825-11.95Q17.65 4 24 4q6.35 0 11.175 4.45Q40 12.9 40 20.4q0 5-3.975 10.875T24 44Zm0-23.6Z'/%3E%3C/svg%3E")
+    &.phone
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' width='48' fill='%23657786'%3E%3Cpath d='M39.75 42q-6.1 0-12.125-3T16.8 31.2Q12 26.4 9 20.375 6 14.35 6 8.25q0-.95.65-1.6Q7.3 6 8.25 6h7q.7 0 1.225.475.525.475.675 1.275l1.35 6.3q.1.7-.025 1.275t-.525.975l-5 5.05q2.8 4.65 6.275 8.1Q22.7 32.9 27.1 35.3l4.75-4.9q.5-.55 1.15-.775.65-.225 1.3-.075l5.95 1.3q.75.15 1.25.75T42 33v6.75q0 .95-.65 1.6-.65.65-1.6.65Zm-28.3-23.4 4.05-4.1L14.35 9H9q0 1.95.6 4.275t1.85 5.325ZM29.9 36.75q2.05.95 4.45 1.55 2.4.6 4.65.7v-5.35l-5.15-1.05ZM11.45 18.6ZM29.9 36.75Z'/%3E%3C/svg%3E")
+    &.mail
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' width='48' fill='%23657786'%3E%3Cpath d='M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1L7 13.75V37h34V13.75Zm0-3L40.8 11H7.25ZM7 13.75V11v26Z'/%3E%3C/svg%3E")

@@ -1,0 +1,26 @@
+$mobile: 769px
+// Mobile: 375px
+// Tablet: 768px
+// Laptop: 1280px
+// Desctop: 1920px
+@function rem($value)
+    $result: calc($value / 16) * 1rem
+    @return $result
+%button
+    margin: 0 auto 1rem auto
+    padding: rem(26) rem(70)
+    display: block
+    color: #FFFFFF
+    font-size: rem(20)
+    font-weight: 600
+    background: #ff7b10
+    border: none
+    outline: none
+    border-radius: 2px
+    box-shadow: 0 0 10px 0 rgb(255 123 16 / 54%)
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+        transform: scale(1.1)
+    @media screen and ( min-width: $mobile )
+        margin: 0 0 1rem 0

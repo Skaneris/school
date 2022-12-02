@@ -1,0 +1,43 @@
+@use 'var'
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+html, body
+    width: 100%
+    min-height: 100vh
+html
+    font-size: 16px
+    @media screen and ( max-width: var.$mobile )
+        font-size: 14px
+body
+    font-family: sans-serif
+    font-family: 'Proxima nova', proxima-nova, sans-serif
+    font-size: 1rem
+    line-height: 1.2
+    color: #3a3a3a
+    display: flex
+    flex-direction: column
+    &.blocked
+        overflow-y: hidden
+.main
+    padding: 2rem 0 1rem 0
+    flex: 1 0 auto
+.container
+    margin: 0 auto
+    padding: 0 1.25rem
+    max-width: 1020px
+h1
+    font-size: var.rem(46)
+h2
+    font-size: var.rem(42)
+h3
+    font-size: var.rem(34)
+h4
+    font-size: var.rem(30)
+h5
+    font-size: var.rem(22)
+p, ul, h1, h2, h3, h4, h5
+    margin: 1rem 0
+img
+    max-width: 100%

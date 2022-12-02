@@ -1,0 +1,27 @@
+extends template/tpl
+
+block topcontent 
+    .full-banner 
+        .full-banner__overlay
+        .full-banner__content
+            h1 Join our remote coding bootcamp
+block content
+    .center-info 
+        h2 Available remote programs
+        h5 Find the right course for you.
+        .block-wrapper
+            .info-card
+                .info-card__image
+                    img(src="images/remote/fsd-program.jpg", alt="software engineering")
+                .info-card__info 
+                    .label 12 weeks
+                    h4 Software Engineering Immersive
+                    p Our flagship course, and the most complete way to get your engineering career started. Includes 3 projects and 1 week of career preparation to ensure you get hired.
+            .info-card
+                .info-card__image 
+                    img(src="images/remote/webdev-program.jpg", alt="webdev")
+                .info-card__info 
+                    .label 8 weeks
+                    h4 Web Development Immersive
+                    p A shorter course that prepares you with all the fundamentals, maintaining our highest standards. Includes 1 personal project and 2 days of career orientation.
+    include template/gethired.pug
