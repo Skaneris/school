@@ -27,6 +27,11 @@ const config = {
             template: './src/index.pug',
         }),
         new HtmlWebpackPlugin({
+            title: 'Software Engineering Immersive Courses',
+            filename: 'software.html',
+            template: './src/software.pug',
+        }),
+        new HtmlWebpackPlugin({
             title: 'Web Development',
             filename: 'webdev.html',
             template: './src/webdev.pug',

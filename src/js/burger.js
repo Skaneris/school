@@ -80,3 +80,10 @@ function screenTest(ev) {
         setMobileListeners()
     }
 }
+
+menu.onclick = (e) => {
+    const el = e.target
+    if(el.tagName === 'A' && el.getAttribute('href') === '#') {
+        e.preventDefault()
+    }
+}

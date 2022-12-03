@@ -1,0 +1,53 @@
+@use '../var'
+.page-header
+    margin: 0 0 2rem 0
+    width: 100%
+    @media screen and ( min-width: var.$mobile )
+        display: flex
+    &__left
+        width: 100%
+        @media screen and ( min-width: var.$mobile )
+            padding: 0 var.rem(20) 0 0
+            flex: 0 0 50%
+    &__right
+        padding: 1rem 0 0 0
+        ul
+            margin: 1rem 0 2rem 0
+            padding: 0 2rem
+            list-style: none
+            display: block
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%)
+            border: 1px solid #e1e8ed
+        li
+            padding: 0.6rem 0
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            border-bottom: 1px solid #e1e8ed
+            &:last-child
+                border-bottom: none
+        span
+            display: block
+            line-height: 1
+            color: #657786
+            &.icon
+                margin: 0 2rem 0 0
+                width: 30px
+                height: 30px
+                background-size: 100%
+                background-position: center
+                background-repeat: no-repeat
+            &.text
+                text-transform: uppercase
+                position: relative
+                top: 2px
+        .button
+            @extend %button
+        @media screen and ( min-width: var.$mobile )
+            padding: 1rem 2rem 1rem var.rem(80)
+            flex: 0 0 50%
+    h5
+        font-weight: 400
+        line-height: 1.4
+.page-image
+    margin: 0 0 4rem 0

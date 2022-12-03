@@ -5,5 +5,16 @@ mixin slider(items)
                 .slide
                     img(src= item, alt="")
 
+mixin pageHeader(title, text, imageName)
+    .page-header
+        .page-header__left
+            h1 #{title}
+            for line in text
+                h5 #{line}
+        .page-header__right
+            block
+    .page-image
+        img(src= "images/courses/" + imageName, alt= title)
+
 - var mainPageImages = ["./images/slider/01.jpg", "./images/slider/02.jpg", "./images/slider/03.jpg", "./images/slider/04.jpg", "./images/slider/05.jpg", "./images/slider/06.jpg", "./images/slider/07.jpg", "./images/slider/08.jpg", "./images/slider/09.jpg", "./images/slider/10.jpg"]
 - var images = ["./images/remote/slider/01.jpg", "./images/remote/slider/02.jpg", "./images/remote/slider/03.jpg"]

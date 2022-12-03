@@ -1,12 +1,12 @@
 extends template/tpl
 
 block content
-    - var text = ['Learn how to be a great web developer and build full-stack apps, with an advanced understanding of JavaScript.']
-    +pageHeader('Web Development Immersive Courses', text, 'webdev.jpg')
+    - var text = ['Learn how to be a great engineer, and build complex apps, with an advanced understanding of JavaScript.']
+    +pageHeader('Software Engineering Immersive Courses', text, 'se.jpg')
         ul 
             li 
                 span.icon(style="background-image: url(images/svg/icons/calendar.svg)")
-                span.text 8 WEEKS, FULL-TIME
+                span.text 12 WEEKS, FULL-TIME
             li 
                 span.icon(style="background-image: url(images/svg/icons/location.svg)")
                 span.text ON SITE OR REMOTE
@@ -16,4 +16,4 @@ block content
             li 
                 span.icon(style="background-image: url(images/svg/icons/chart.svg)")
                 span.text +25% HIGHER AVG SALARY
-        button.button Apply Today
+        button.button Choose a location

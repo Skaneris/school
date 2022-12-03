@@ -1,8 +1,50 @@
 extends template/tpl
 
-
 block content
-    h1 Free Intro to Javascript
-
-    +slider(images)
+    - var text = ['Learn the basics of JavaScript and move your first steps with programming.', 'This free online course includes everything you need to know to get started in just two weeks.']
+    +pageHeader('Intro to JavaScript', text, 'introjs.jpg')
+        ul 
+            li 
+                span.icon(style="background-image: url(images/svg/icons/star.svg)")
+                span.text FREE COURSE
+            li 
+                span.icon(style="background-image: url(images/svg/icons/time.svg)")
+                span.text 10-20 HOURS
+            li 
+                span.icon(style="background-image: url(images/svg/icons/play.svg)")
+                span.text SELF-PACED
+        button.button Sign Up for Free
+    section.simple 
+        h2 About
+        p In this free course we’ll guide you though the basic concepts of programming, and introduce you to JavaScript. You’ll become familiar with JS syntax, while learning what are variables, control flows, functions, objects, and classes. 
+        p At the end of the course you’ll be able to solve simple coding challenges on your own, and will be ready to apply to Codeworks if you decide to continue learning.
+    section.simple 
+        h2 Syllabus
+        p The course is divided in two sections: “Theory” and “Practice”.
+        p The total time necessary to complete the course is 10-20 hours of focused study, depending on your learning style and familiarity with the topics.
+        p You’re encouraged to do the Theory part first, and then apply what you’ve learned to solve the exercises in the Practice section.
+        ul
+            li.title Theory
+            li JavaScript and data types
+            li Variables and operators
+            li Control flow
+            li Functions
+            li Scope
+            li Arrays
+            li Loops
+            li Objects
+            li Classes
+            li.title Practice
+            li Setup
+            li Numbers
+            li Strings
+            li Mixed
+    section.simple 
+        h2 Who is it for?
+        p This course will help you move your first steps into coding.
+    section.simple 
+        h2 Requirements
+        p There are no prerequisites to take this course. It’s designed for people that are starting from zero. You just need your computer and an Internet connection.
+        p The course is completely free and has no tuition cost.
+                
 
