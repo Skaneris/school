@@ -6,7 +6,7 @@ block topcontent
         .full-banner__content
             h1 Join our remote coding bootcamp
 block content
-    .center-info 
+    section.center-info 
         h2 Available remote programs
         h5 Find the right course for you.
         .block-wrapper
@@ -24,4 +24,11 @@ block content
                     .label 8 weeks
                     h4 Web Development Immersive
                     p A shorter course that prepares you with all the fundamentals, maintaining our highest standards. Includes 1 personal project and 2 days of career orientation.
+    section.row_40_60
+        .row_40_60__left
+            h2  Learn online
+            p Attend live lectures and group coding sessions, through online video chat and collaborative development tools with other students in your time zone.
+            p Get the same personalized feedback and real-time interaction that you would receive in a traditional in-person class.
+        .row_40_60__right
+            +slider(images)
     include template/gethired.pug
