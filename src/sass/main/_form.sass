@@ -1,0 +1,83 @@
+@use '../var'    
+.overlay
+    width: 100%
+    height: 100vh
+    position: fixed
+    left: 0
+    top: 0
+    background: rgba(0, 0, 0, 0.4)
+    z-index: 3
+    display: flex
+    cursor: pointer
+.form
+    max-width: 320px
+    margin: auto
+    background: #FFFFFF
+    border-radius: 3px
+    box-shadow: 1px 1px 16px 8px rgba(0, 0, 0, 0.2)
+    cursor: default
+    &__header
+        padding: 0.5rem 2rem 0.5rem 1rem
+        margin: 0
+        background: #ff7b10
+        color: #FFFFFF
+        position: relative
+        span
+            font-size: 1.2rem
+            line-height: 1
+            text-transform: uppercase
+        .close
+            width: 1.2rem
+            height: 1.2rem
+            position: absolute
+            right: 0.5rem
+            top: 0.5rem
+            cursor: pointer
+            transition: 0.45s
+            &:hover
+                transform: rotate(180deg)
+            &::before, &::after
+                content: ''
+                display: block
+                width: 100%
+                height: 1px
+                background: #FFFFFF
+                position: absolute
+                top: 0.55rem
+                left: 0
+            &::before
+                transform: rotate(45deg)
+            &::after
+                transform: rotate(-45deg)
+    &__body
+        padding: 1rem
+        input
+            width: 100%
+            padding: 0.3rem 0.5rem
+            font-size: 1rem
+            border: 1px solid #CCC
+            outline: none
+            flex-basis: auto
+    &__desc
+        padding: 0 0 0.5rem 0
+        font-size: 0.9rem
+    &__row
+        width: 100%
+        margin: 0.5rem 0
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        label
+            flex-basis: 4.5rem
+            margin: 0 0.3rem 0 0
+    &__footer
+        padding: 0.5rem 1rem
+        background: lighten(#CCC, 14)
+        display: flex
+        justify-content: center
+        .button
+            @extend %button
+            margin: 0
+            padding: 0.5rem 1rem
+            font-size: 1rem
+            font-weight: 400
