@@ -42,14 +42,9 @@ const config = {
             template: './src/introjs.pug',
         }),
         new HtmlWebpackPlugin({
-            title: 'English',
-            filename: 'english.html',
-            template: './src/english.pug',
-        }),
-        new HtmlWebpackPlugin({
-            title: 'Ukrainian',
-            filename: 'ukrainian.html',
-            template: './src/ukrainian.pug',
+            title: 'Foreign languages',
+            filename: 'languages.html',
+            template: './src/languages.pug',
         }),
         new HtmlWebpackPlugin({
             title: 'Remote',

@@ -1,0 +1,16 @@
+extends template/tpl
+
+block content
+    - var text = ['What about good reasons to start learning a new language?', 'Many students equally agree that learning a foreign language is key in worldwide success.']
+    +pageHeader('Foreign Languages', text, 'language.jpg')
+        ul 
+            li 
+                span.icon(style="background-image: url(images/svg/icons/play.svg)")
+                span.text Ukrainian language
+            li 
+                span.icon(style="background-image: url(images/svg/icons/play.svg)")
+                span.text Spanish language
+            li 
+                span.icon(style="background-image: url(images/svg/icons/play.svg)")
+                span.text SELF-PACED
+        button.button Apply Today
